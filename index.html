@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaTEch</title>
+</head>
+<body>
+    <h1>PizzaTech</h1>
+    <br><br>
+    <h2>Novo Pedido</h2>
+    <br><br>
+    <form action="#" method="POST">
+        <label><b>Seu Nome:</b></label>
+        <br>
+        <input type="text" name="nome" placeholder="Ex:Joao">
+        <br><br>
+
+        <label><b>Escolha o sabor da pizza:</b></label>
+        <br>
+        <select name="saborpizza">
+            <option value="Mussarela">Mussarela - R$ 50,00</option>
+            <option value="Calabresa">Calabresa - R$ 52,00</option>
+            <option value="Portuguesa">Portuguesa - R$ 60,00</option>
+        </select>
+        <br><br>
+        
+        <label><b>Borda Recheada:</b></label>
+        <br><input type="radio" name="bordaR" value="Não">Não
+        <br><input type="radio" name="bordaR" value="Sim">Sim (+ R$ 5,00)
+        <br><br>
+
+        <label><b>Bebidas(você pode escolher mais de uma):</b></label>
+        <br><input type="checkbox" name="bebida[]" value="refrigeranteLata">Refrigerante Lata - R$ 8,00
+        <br><input type="checkbox" name="bebida[]" value="suco">Suco - R$ 12,00
+        <br><input type="checkbox" name="bebida[]" value="agua">Agua - R$ 5,00
+        <br><br>
+
+        <input type="submit" value="Finalizar Pedido">
+    </form>
+    <div>
+
+    </div>
+</body>
+</html>
