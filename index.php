@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PizzaTEch</title>
+  <title>PizzaTech</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -74,7 +74,7 @@
 if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 
   $nm = $_POST['nome'];
-  echo "<br>Aluno: " . $nm;
+  echo "<br>Nome: " . $nm;
 
   $saborp = $_POST['saborpizza'];
   echo "<br>Sabor da Pizza: " . $saborp;
@@ -83,9 +83,44 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
   echo "<br>Borda Recheada: " . $bordaR;
 
   $bebida = $_POST['bebida'];
-  echo "<br>Bebidas Selecionadas: ";
+  echo "<br>Bebidas Selecionadas: <br>";
 
   foreach ($bebida as $b) {
-    echo $b . " ";
+    echo " "  . $b ;  
   }
+<<<<<<< Updated upstream
 }
+=======
+
+
+  $vlsaborpizza = 0;
+  $vltotalapagar = 0;
+
+  if ($saborp == "Mussarela") {
+    $vlsaborpizza = 50;
+  } elseif ($saborp == "Calabresa") {
+    $vlsaborpizza = 52;
+  } elseif ($saborp == "Portuguesa") {
+    $vlsaborpizza = 60;
+  }
+
+  $vltotalapagar = $vlsaborpizza;
+
+  if ($bordaR == "Sim") {
+    $vltotalapagar += 5;
+  }
+
+  foreach ($bebida as $b) {
+    if ($b == "Refrigerante Lata") {
+      $vltotalapagar += 8;
+    } elseif ($b == "Suco") {
+      $vltotalapagar += 12;
+    } elseif ($b == "Agua") {
+      $vltotalapagar += 5;
+    }
+  }
+
+  echo "<br>Valor Total a Pagar: R$ " . $vltotalapagar . ",00";
+
+}
+>>>>>>> Stashed changes
