@@ -41,13 +41,13 @@
     <div class="grupo-checkbox">
       <label><b>Bebidas (você pode escolher mais de uma):</b></label>
       <div class="opcao-checkbox">
-        <input type="checkbox" name="bebida[]" value="refrigeranteLata"> Refrigerante Lata - R$ 8,00
+        <input type="checkbox" name="bebida[]" value="Refrigerante Lata"> Refrigerante Lata - R$ 8,00
       </div>
       <div class="opcao-checkbox">
-        <input type="checkbox" name="bebida[]" value="suco"> Suco 500ml - R$ 12,00
+        <input type="checkbox" name="bebida[]" value="Suco"> Suco 500ml - R$ 12,00
       </div>
       <div class="opcao-checkbox">
-        <input type="checkbox" name="bebida[]" value="agua"> Água 500ml - R$ 5,00
+        <input type="checkbox" name="bebida[]" value="Agua"> Água 500ml - R$ 5,00
       </div>
     </div>
 
@@ -58,3 +58,26 @@
 </body>
 
 </html>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+
+  $nm = $_POST['nome'];
+  echo "<br>Aluno: " . $nm;
+
+  $saborp = $_POST['saborpizza'];
+  echo "<br>Sabor da Pizza: " . $saborp;
+
+  $bordaR = $_POST['bordaR'];
+  echo "<br>Borda Recheada: " . $bordaR;
+
+  $bebida = $_POST['bebida'];
+  echo "<br>Bebidas Selecionadas: ";
+
+  foreach ($bebida as $b) {
+    echo $b . " ";
+  }
+
+  
+
+}
