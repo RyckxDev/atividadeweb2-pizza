@@ -13,12 +13,10 @@ body {
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  gap: 24px;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
-
 
 h1 {
   font-size: 28px;
@@ -122,49 +120,46 @@ input[type="submit"]:hover {
   background-color: #c93508;
 }
 
-body {
-  gap: 32px;
-  align-items: center;
-  padding: 60px 20px;
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .resumo {
-  background: linear-gradient(145deg, #f7dc6f, #e8b84b);
-  padding: 36px 32px;
-  border-radius: 12px;
+  background: linear-gradient(160deg, #f7dc6f, #e8b84b);
+  padding: 32px 28px;
+  border-radius: 10px;
   width: 320px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  border-top: 5px solid #e8420a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.resumo-topo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .resumo h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #1a1a1a;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-  text-align: center;
-  letter-spacing: 0.5px;
+  margin-bottom: 8px;
 }
 
 .resumo p {
   font-size: 14px;
   color: #1a1a1a;
-  margin-bottom: 12px;
-  padding: 10px 14px;
-  background-color: rgba(255, 255, 255, 0.35);
-  border-radius: 6px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .resumo .total {
-  margin-top: 20px;
-  padding: 14px;
-  background-color: #e8420a;
-  color: #ffffff;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
+  padding-top: 16px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  margin-top: 24px;
 }

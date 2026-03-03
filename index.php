@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+  <body>
+  <div class="container">
   <form action="#" method="POST">
     <h1>PizzaTech</h1>
     <h2>Novo Pedido</h2>
@@ -62,7 +63,7 @@
     <p><b>Bebidas:</b> Refrigerante (R$ 8,00), Água (R$ 5,00)</p>
     <p class="total"><b>Total a pagar:</b> R$ 70,00</p>
   </div>
-
+  </div>
   <div>
   </div>
 </body>
