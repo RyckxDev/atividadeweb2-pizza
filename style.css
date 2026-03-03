@@ -7,7 +7,7 @@
 body {
   min-height: 100vh;
   background-color: #111;
-  background-image: url('pizza-bg.jpg');
+  background-image: url('https://servidor-estaticos-ashy.vercel.app/v2/dev-web/fundoPizza.jpg');
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
