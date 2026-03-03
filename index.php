@@ -53,6 +53,16 @@
 
     <input type="submit" value="Finalizar Pedido">
   </form>
+
+  <div class="resumo">
+    <h3>Resumo do Pedido</h3>
+    <p><b>Nome:</b> Ana</p>
+    <p><b>Sabor da pizza:</b> Calabresa (R$ 52,00)</p>
+    <p><b>Borda recheada:</b> Sim (R$ 5,00)</p>
+    <p><b>Bebidas:</b> Refrigerante (R$ 8,00), Água (R$ 5,00)</p>
+    <p class="total"><b>Total a pagar:</b> R$ 70,00</p>
+  </div>
+
   <div>
   </div>
 </body>
@@ -77,7 +87,4 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
   foreach ($bebida as $b) {
     echo $b . " ";
   }
-
-  
-
 }
