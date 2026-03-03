@@ -87,9 +87,6 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
   foreach ($bebida as $b) {
     echo " "  . $b ;  
   }
-<<<<<<< Updated upstream
-}
-=======
 
 
   $vlsaborpizza = 0;
@@ -122,4 +119,3 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
   echo "<br>Valor Total a Pagar: R$ " . $vltotalapagar . ",00";
 
 }
->>>>>>> Stashed changes
